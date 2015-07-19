@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		276144DA105F523C00F906F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276144CD105F523C00F906F6 /* InfoPlist.strings */; };
 		276144DB105F523C00F906F6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276144CF105F523C00F906F6 /* MainMenu.xib */; };
 		276144F6105F531D00F906F6 /* SIMBLAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 276144D9105F523C00F906F6 /* SIMBLAgent.m */; };
 		27614514105F556A00F906F6 /* SIMBL Agent.app in Resources */ = {isa = PBXBuildFile; fileRef = 276144C1105F51CA00F906F6 /* SIMBL Agent.app */; };
@@ -52,9 +51,7 @@
 
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		273F8C4712F3760300321488 /* SIMBLMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMBLMacros.h; sourceTree = "<group>"; };
 		276144C1105F51CA00F906F6 /* SIMBL Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIMBL Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		276144CE105F523C00F906F6 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		276144D0105F523C00F906F6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		276144D1105F523C00F906F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SIMBL Agent/Info.plist"; sourceTree = SOURCE_ROOT; };
 		276144D3105F523C00F906F6 /* net.culater.SIMBL.Agent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = net.culater.SIMBL.Agent.plist; sourceTree = "<group>"; };
@@ -142,7 +139,6 @@
 		276144EB105F529100F906F6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				276144CD105F523C00F906F6 /* InfoPlist.strings */,
 				276144CF105F523C00F906F6 /* MainMenu.xib */,
 				276144D1105F523C00F906F6 /* Info.plist */,
 				276144D3105F523C00F906F6 /* net.culater.SIMBL.Agent.plist */,
@@ -163,7 +159,6 @@
 		E0AF789109B3031900F50FE7 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				273F8C4712F3760300321488 /* SIMBLMacros.h */,
 				E0AF789209B3031900F50FE7 /* DTMacros.h */,
 				E0AF789309B3031900F50FE7 /* NSAlert_SIMBL.h */,
 				E0AF789409B3031900F50FE7 /* NSAlert_SIMBL.m */,
@@ -225,6 +220,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = E0E8F445085F4D0400DCD56F /* Build configuration list for PBXProject "SIMBL" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -260,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276144DA105F523C00F906F6 /* InfoPlist.strings in Resources */,
 				276144DB105F523C00F906F6 /* MainMenu.xib in Resources */,
 				27614514105F556A00F906F6 /* SIMBL Agent.app in Resources */,
 			);
@@ -330,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		276144CD105F523C00F906F6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				276144CE105F523C00F906F6 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		276144CF105F523C00F906F6 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -396,11 +383,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = src/SIMBL_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
-				GCC_VERSION = 4.2;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_VERSION = 0.9.8;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
@@ -412,10 +397,9 @@
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = src/SIMBL_Prefix.pch;
-				GCC_VERSION = 4.2;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_VERSION = 0.9.8;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
