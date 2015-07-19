@@ -349,7 +349,6 @@
 			buildSettings = {
 				INFOPLIST_FILE = "SIMBL Agent/Info.plist";
 				PRODUCT_NAME = "SIMBL Agent";
-				PRODUCT_VERSION = 0.9.9;
 			};
 			name = Deployment;
 		};
@@ -367,7 +366,6 @@
 			buildSettings = {
 				INFOPLIST_FILE = rez/Info.plist;
 				PRODUCT_NAME = SIMBL;
-				PRODUCT_VERSION = 0.9.9;
 				WRAPPER_EXTENSION = osax;
 			};
 			name = Deployment;
@@ -383,7 +381,7 @@
 				GCC_PREFIX_HEADER = src/SIMBL_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_VERSION = 0.9.8;
+				PRODUCT_VERSION = 0.9.9;
 				SDKROOT = macosx;
 			};
 			name = Development;
@@ -396,7 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = src/SIMBL_Prefix.pch;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_VERSION = 0.9.8;
+				PRODUCT_VERSION = 0.9.9;
 				SDKROOT = macosx;
 			};
 			name = Deployment;
