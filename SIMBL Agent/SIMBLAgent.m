@@ -112,12 +112,10 @@ fail:
 	unsigned bugfixOSVersion = 0;
 	[NSApp getSystemVersionMajor:&majorOSVersion minor:&minorOSVersion bugFix:&bugfixOSVersion];
 	
-	if (majorOSVersion != 10) {
-		SIMBLLogNotice(@"something fishy - OS X version %u", majorOSVersion);
+	if (majorOSVersion != 10 || minorOSVersion < 6) {
+		SIMBLLogNotice(@"something fishy - OS X version %u.%u", majorOSVersion, minorOSVersion);
 		return;
-	}
-	
-	AEEventID eventID = minorOSVersion > 5 ? 'load' : 'leop';
+    }
 
 	// Find the process to target
 	pid_t pid = [[appInfo objectForKey:@"NSApplicationProcessIdentifier"] intValue];
@@ -146,7 +144,7 @@ fail:
 	
 	// Inject!
 	[app setSendMode:kAENoReply | kAENeverInteract | kAEDontRecord];
-	id injectReply = [app sendEvent:'SIMe' id:eventID parameters:0];
+	id injectReply = [app sendEvent:'SIMe' id:'load' parameters:0];
 	if (injectReply != nil) {
 		SIMBLLogNotice(@"unexpected injectReply: %@", injectReply);
 	}
