@@ -16,7 +16,7 @@ Use xcodebuild to get ``SIMBL.osax``, then open ``pkg/SIMBL.pmdoc`` by PackageMa
 
     xcodebuild -project SIMBL.xcodeproj
 
-You can still download PackageMaker from [Apple's download page](https://developer.apple.com/downloads/) as a part of *Auxiliary Tools fro Xcode - Late July 2012*.
+You can still download PackageMaker from [Apple's download page](https://developer.apple.com/downloads/) as a part of *Auxiliary Tools for Xcode - Late July 2012*.
 
 License
 -------
