@@ -2,7 +2,7 @@ Unofficial SIMBL repository
 ===========================
 
 This is a copied, exported repository from original one [hosted on Google Code](https://code.google.com/p/simbl/).
-Also see [SIMBL web size](http://www.culater.net/software/SIMBL/SIMBL.php).
+Also see [SIMBL web site](http://www.culater.net/software/SIMBL/SIMBL.php).
 
 Changes
 -------
